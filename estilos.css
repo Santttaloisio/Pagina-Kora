@@ -46,9 +46,10 @@ html, body{
     margin: 10px 0 0 0;
 }
 
-.Contenido-bajo-el-video h2{
+.Contenido-bajo-el-video p{
     text-align: center;
     font-size: 50px ;
+    color: gray;
 }
 
 .GaleriaDeProductos{
@@ -60,9 +61,9 @@ html, body{
 }
 
 .GaleriaDeProductos img {
-    width: calc(33.333% - 20px);
+
     height: auto;
-    border-radius: 10px;
+    border-radius: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -71,7 +72,11 @@ html, body{
     transform: scale(1.05);
 }
 
-.producto{
+.productoL p{
+    text-align: center;
+}
+
+.productoL{
     width: 300px;
     text-align: center;
     color: #ccc;
@@ -79,21 +84,38 @@ html, body{
     margin: 10px auto;
 }
 
-.producto img {
+.productoL img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 12px;
     object-fit: cover;
     transition: transform 0.3s ease;
+    margin-bottom: 5px ;
 }
 
-.producto h3{
+.productoL h3{
     margin: 10px 0 5px;
-    font-size: 18px ;
+    font-size: 15px ;
 }
 
-.producto p{
+.productoL p{
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #ccc;
+    border-radius: 30px;
+}
+
+.LineaDivisora{
+    margin-top: 30px;
+    height: 2px;
+    background-color: #ccc;
+    width: 80%;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.productoHombres p{
+
+    text-align: center;
+
 }
