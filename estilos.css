@@ -113,11 +113,7 @@ html, body{
     width: 80%;
     text-align: center;
     margin: 40px auto;
-}
-
-p{
-    margin-top: 5px;
-    font-size: 10px;
+    margin-bottom: 20px;
 }
 
 .productoHombres{
@@ -140,7 +136,7 @@ p{
 .productoHombres img:hover{
     transform: scale(1.05);
 }
+.tituloSeeccionHombres p{
+    margin-top: 50px;
 
-.productoHombres p{
-    text-align: center;
 }
