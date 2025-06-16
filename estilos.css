@@ -61,8 +61,22 @@ html, body{
     justify-content: space-around;
 }
 
-.GaleriaDeProductos img {
+.GaleriaCarrusel{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    scroll-behavior: smooth;
+    
+}
 
+.GaleriaCarrusel::-webkit-scrollbar {
+    display: none;
+}
+
+.GaleriaDeProductos img {
     height: auto;
     border-radius: auto;
     object-fit: cover;
@@ -75,14 +89,21 @@ html, body{
 
 .productoL p{
     text-align: center;
+    font-size: 50px;
 }
 
 .productoL{
+    scroll-snap-align: start;
+    flex: 0 0 auto;
     width: 300px;
     text-align: center;
     color: #ccc;
     font-family: sans-serif;
     margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .productoL img {
@@ -107,7 +128,7 @@ html, body{
 }
 
 .LineaDivisora{
-    margin-top: 10px;
+    margin-top: 100px;
     height: 2px;
     background-color: #ccc;
     width: 80%;
@@ -115,9 +136,12 @@ html, body{
     margin: 40px auto;
 }
 
-p{
+.tituloSeeccionHombres p{
     margin-top: 5px;
     font-size: 10px;
+    color: gray;
+    text-align: center;
+    font-size: 50px;
 }
 
 .productoHombres{
@@ -142,5 +166,8 @@ p{
 }
 
 .productoHombres p{
-    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    color: #ccc;
+    border-radius: 30px;
 }
