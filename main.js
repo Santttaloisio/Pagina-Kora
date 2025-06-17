@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let scrollAmount = 0;
   let animationId;
-  const velocidadXsegundo = 30;
-  const velocidadPorFrame = velocidadXsegundo / 60;
+  const velocidadXsegundo = 120;
+  const velocidadPorFrame = velocidadXsegundo / 1200;
 
   function smoothScroll() {
     scrollAmount += velocidadPorFrame;
