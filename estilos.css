@@ -61,15 +61,27 @@ html, body{
     justify-content: space-around;
 }
 
+#productos {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px; /* opcional, para separar productos */
+}
+
+
 .GaleriaCarrusel{
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
     gap: 20px;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: none;
     padding: 20px;
-    scroll-behavior: smooth;
+    scroll-behavior: auto
     
+}
+
+.GaleriaDeProductos .productoL {
+
+    width: 300px;
+
 }
 
 .GaleriaCarrusel::-webkit-scrollbar {
