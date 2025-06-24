@@ -64,7 +64,7 @@ html, body{
 #productos {
   display: flex;
   flex-wrap: nowrap;
-  gap: 20px; /* opcional, para separar productos */
+  gap: 20px; 
 }
 
 
@@ -125,6 +125,10 @@ html, body{
     object-fit: cover;
     transition: transform 0.3s ease;
     margin-bottom: 5px ;
+}
+
+.productoL img:hover {
+    transform: scale(1.05); 
 }
 
 .productoL h3{
@@ -188,4 +192,25 @@ html, body{
     font-size: 18px;
     color: #ccc;
     border-radius: 30px;
+}
+
+.botonesCarrusel {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.botonC {
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botonC:hover {
+    background-color: #aaa;
 }
